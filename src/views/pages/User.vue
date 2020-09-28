@@ -42,13 +42,13 @@
               @click="showEditDialog(scope.row.id)"
             ></el-button>
             <el-button
-              type="warning"
+              type="danger"
               icon="el-icon-delete"
               size="mini"
               @click="delUser(scope.row.id)"
             ></el-button>
             <el-tooltip effect="dark" content="分配角色" placement="top" :enterable="false">
-              <el-button @click="showRoleDialog(scope.row)" type="primary" icon="el-icon-setting" size="mini"></el-button>
+              <el-button @click="showRoleDialog(scope.row)" type="warning" icon="el-icon-setting" size="mini"></el-button>
             </el-tooltip>
           </template>
         </el-table-column>
