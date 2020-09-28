@@ -7,6 +7,7 @@
       </div>
       <!-- 登录表单 -->
       <div>
+        <!-- rules是设置表单校验规则 -->
         <el-form
           ref="loginFormRef"
           :rules="loginFormRules"
@@ -15,6 +16,7 @@
           class="login_form"
         >
           <!-- 用户名 -->
+          <!-- prop属性设置为需校验的字段名 -->
           <el-form-item prop="username">
             <el-input v-model="loginForm.username" prefix-icon="iconfont icon-user"></el-input>
           </el-form-item>
@@ -72,6 +74,7 @@ export default {
       this.$refs.loginFormRef.resetFields()
     },
     login() {
+        // 判断表单验证是否有效
       this.$refs.loginFormRef.validate(async (valid) => {
         // console.log(valid)
         if (!valid) return
