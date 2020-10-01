@@ -194,13 +194,7 @@ export default {
           { validator: checkPhone, trigger: 'blur' },
         ],
       },
-      // 添加用户表单属性
-      addRuleForm: {
-        username: '',
-        password: '',
-        email: '',
-        mobile: '',
-      },
+ 
       //编辑用户表单数据
       editFormData: {
         id: 0,
@@ -339,7 +333,7 @@ export default {
       })
         .then(() => {
           this.$http.delete('users/' + userId).then((res) => {
-            console.log(res)
+            // console.log(res)
             const data = res.data
             if (data.meta.status !== 200)
               return this.$message.error('删除用户失败')
@@ -380,7 +374,7 @@ export default {
       await this.$http.put(`users/${this.userInfo.id}/role`,{
         rid:this.selectRoleId
       }).then(res =>{
-        // console.log(res)
+        console.log(res)
         const data = res.data
         if(data.meta.status !== 200) return this.$message.error('修改用户角色失败')
         this.$message.success('修改用户角色成功')

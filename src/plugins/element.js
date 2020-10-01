@@ -26,7 +26,8 @@ import {
   MessageBox,
   Select,
   Option,
-  Tag
+  Tag,
+  Tree
 } from 'element-ui'
 
 Vue.use(Button)
@@ -54,6 +55,7 @@ Vue.use(Dialog)
 Vue.use(Select)
 Vue.use(Option)
 Vue.use(Tag)
+Vue.use(Tree)
 
 
 // 把Message MessageBox挂载到全局
