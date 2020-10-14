@@ -27,7 +27,17 @@ import {
   Select,
   Option,
   Tag,
-  Tree
+  Tree,
+  Alert,
+  Steps,
+  Step,
+  Tabs,
+  TabPane,
+  Cascader,
+  Checkbox,
+  CheckboxGroup,
+  Upload
+
 } from 'element-ui'
 
 Vue.use(Button)
@@ -56,8 +66,15 @@ Vue.use(Select)
 Vue.use(Option)
 Vue.use(Tag)
 Vue.use(Tree)
-
-
+Vue.use(Alert)
+Vue.use(Step)
+Vue.use(Steps)
+Vue.use(Tabs)
+Vue.use(TabPane)
+Vue.use(Cascader)
+Vue.use(Checkbox)
+Vue.use(CheckboxGroup)
+Vue.use(Upload)
 // 把Message MessageBox挂载到全局
 Vue.prototype.$message = Message
 Vue.prototype.$confirm = MessageBox.confirm
