@@ -9,6 +9,7 @@ import Rights from '../views/pages/rights/Rights.vue'
 
 import List from '../views/pages/product/List.vue'
 import AddProduct from '../views/pages/product/AddProduct.vue'
+import Params from '../views/pages/product/Params.vue'
 
 
 Vue.use(VueRouter)
@@ -53,6 +54,11 @@ const router = new VueRouter({
         {
           path:'/goods/addProduct',
           component:AddProduct
+
+        },
+        {
+          path:'/params',
+          component:Params
 
         }
       ]
