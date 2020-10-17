@@ -10,6 +10,7 @@ import Rights from '../views/pages/rights/Rights.vue'
 import List from '../views/pages/product/List.vue'
 import AddProduct from '../views/pages/product/AddProduct.vue'
 import Params from '../views/pages/product/Params.vue'
+import GoodsCatelog from '../views/pages/product/GoodsCatelog.vue'
 
 
 Vue.use(VueRouter)
@@ -59,6 +60,11 @@ const router = new VueRouter({
         {
           path:'/params',
           component:Params
+
+        },
+        {
+          path:'/categories',
+          component:GoodsCatelog
 
         }
       ]

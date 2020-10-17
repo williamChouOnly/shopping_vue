@@ -28,6 +28,11 @@ axios.interceptors.request.use(config =>{
 // 把axios挂载到http上
 Vue.prototype.$http = axios
 
+
+import TreeTable from 'vue-table-with-tree-grid'
+
+Vue.component('tree-table', TreeTable)
+
 // 时间过滤器
 Vue.filter('dataFormate',function(originVal){
   const dt = new Date(originVal)
